@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
-
+import logo from './Studio_Ghibli_Logo.svg_.png';
+import Setup from './UseEffectFetchData';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className='container'>
+        {/* <h1>Studio Ghibli</h1> */}
+        <img className='logo' src={logo} alt='an animal cartoon'/>
+        <h1>Films</h1>
+        <Setup/>
+      </div>
     </div>
   );
 }
